@@ -51,3 +51,7 @@ const server = http.createServer((req, res) => {
     res.end(renderPage('404 Not Found', '404 - Page Not Found', 'The requested route does not exist on this server.'));
   }
 });
+const PORT = 5000;
+server.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
